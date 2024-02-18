@@ -1,6 +1,5 @@
 <template>
-  <div>
-    hwllo
+  <div class="userContainer">
     <h1>Post Page</h1>
     <div v-if="loading">Loading...</div>
 
@@ -13,6 +12,7 @@
       <p>title: {{ post.title }}</p>
       <p>body: {{ post.body }}</p>
     </div>
+    <button @click="goBack">Back</button>
   </div>
 </template>
 
@@ -54,6 +54,9 @@ export default {
           this.errorMessage = "Error fetching post. Please try again later.";
           this.loading = false;
         });
+    },
+    goBack() {
+      this.$router.go(-1);
     },
   },
 };

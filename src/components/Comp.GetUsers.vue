@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .userContainer {
   max-width: 900px;
   width: 100%;
