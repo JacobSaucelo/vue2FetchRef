@@ -4,11 +4,15 @@
     <!-- <CompGetUsers /> -->
     <!-- <router-link to="/">Home</router-link>
     <router-link to="/post/2">Home2</router-link> -->
-    <router-link to="/">Home</router-link> -
-    <router-link to="/display">display</router-link> -
-    <router-link to="/crudtest">crudtest</router-link> -
-    <router-link to="/cookies-nolibrary">cookies-nolibrary</router-link> -
-    <router-link to="/cookies-library">cookies-library</router-link>
+    <section class="headerLinks">
+      <router-link to="/">Home</router-link> -
+      <router-link to="/display">display</router-link> -
+      <router-link to="/crudtest">crudtest</router-link> -
+      <router-link to="/cookies-nolibrary">cookies-nolibrary</router-link> -
+      <router-link to="/cookies-library">cookies-library</router-link> -
+      <router-link to="/comp-vuex">comp-vuex</router-link> -
+      <router-link to="/comp-petsx">comp-petsx</router-link>
+    </section>
     <router-view></router-view>
   </div>
 </template>
@@ -22,4 +26,11 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+.headerLinks {
+  max-width: 900px;
+  margin: auto;
+}
 </style>
+
+<!-- npm install vuex@3 -->
+<!-- npm install vue-router@3 -->
