@@ -4,8 +4,9 @@
     <!-- <CompGetUsers /> -->
     <!-- <router-link to="/">Home</router-link>
     <router-link to="/post/2">Home2</router-link> -->
-    <router-link to="/">Home</router-link>
-    <router-link to="/display">display</router-link>
+    <router-link to="/">Home</router-link>-
+    <router-link to="/display">display</router-link>-
+    <router-link to="/crudtest">crudtest</router-link>
     <router-view></router-view>
   </div>
 </template>

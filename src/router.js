@@ -5,6 +5,7 @@ import Home from "./components/Comp.GetUsers.vue";
 import PostUser from "./components/Comp.UserPost.vue";
 import FormTest from "./components/Comp.FormTest.vue";
 import DisplayStorage from "./components/Comp.DisplayStorage.vue";
+import CrudTest from "./components/Comp.CrudTest.vue";
 
 Vue.use(VueRouter);
 
@@ -13,6 +14,7 @@ const routes = [
   { path: "/post/:id", component: PostUser },
   { path: "/formTest", component: FormTest },
   { path: "/display", component: DisplayStorage },
+  { path: "/crudtest", component: CrudTest },
 ];
 
 const router = new VueRouter({
