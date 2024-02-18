@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="userContainer">
     <h1>POSTS</h1>
     <div v-if="loading">Loading...</div>
 
@@ -7,10 +7,12 @@
 
     <div v-else>
       <section>
-        <div v-for="post in posts" :key="post.id">
+        <div v-for="post in posts" :key="post.id" class="card">
           <article>
             <h3>
-              {{ post.title }}
+              <router-link :to="'/post/' + post.id">
+                {{ post.title }}
+              </router-link>
             </h3>
             <p>{{ post.body }}</p>
           </article>
@@ -56,3 +58,19 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.userContainer {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  text-align: start;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+</style>

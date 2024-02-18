@@ -1,20 +1,12 @@
 <template>
   <div id="app">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <CompGetUsers />
+    <!-- <CompGetUsers /> -->
+    <!-- <router-link to="/">Home</router-link>
+    <router-link to="/post/2">Home2</router-link> -->
+    <router-view></router-view>
   </div>
 </template>
-
-<script>
-import CompGetUsers from "./components/Comp.GetUsers.vue";
-
-export default {
-  name: "App",
-  components: {
-    CompGetUsers,
-  },
-};
-</script>
 
 <style>
 #app {
