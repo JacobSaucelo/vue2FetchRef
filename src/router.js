@@ -6,6 +6,7 @@ import PostUser from "./components/Comp.UserPost.vue";
 import FormTest from "./components/Comp.FormTest.vue";
 import DisplayStorage from "./components/Comp.DisplayStorage.vue";
 import CrudTest from "./components/Comp.CrudTest.vue";
+import CookiesNoLibrary from "./components/Comp.CookiesNoLibrary.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,7 @@ const routes = [
   { path: "/formTest", component: FormTest },
   { path: "/display", component: DisplayStorage },
   { path: "/crudtest", component: CrudTest },
+  { path: "/cookies-nolibrary", component: CookiesNoLibrary },
 ];
 
 const router = new VueRouter({
