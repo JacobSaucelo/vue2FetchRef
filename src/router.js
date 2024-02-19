@@ -10,6 +10,7 @@ import CookiesNoLibrary from "./components/Comp.CookiesNoLibrary.vue";
 import CookiesLibrary from "./components/Comp.CookiesJsCookie.vue";
 import CompVueX from "./components/Comp.VuexTest.vue";
 import CompPetsX from "./components/Comp.VueXPets.vue";
+import CompBootList from "./components/Comp.BootList.vue";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,7 @@ const routes = [
   { path: "/cookies-library", component: CookiesLibrary },
   { path: "/comp-vuex", component: CompVueX },
   { path: "/comp-petsx", component: CompPetsX },
+  { path: "/comp-boot-list", component: CompBootList },
 ];
 
 const router = new VueRouter({

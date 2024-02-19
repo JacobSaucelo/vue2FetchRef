@@ -11,7 +11,8 @@
       <router-link to="/cookies-nolibrary">cookies-nolibrary</router-link> -
       <router-link to="/cookies-library">cookies-library</router-link> -
       <router-link to="/comp-vuex">comp-vuex</router-link> -
-      <router-link to="/comp-petsx">comp-petsx</router-link>
+      <router-link to="/comp-petsx">comp-petsx</router-link> -
+      <router-link to="/comp-boot-list">comp-boot-list</router-link>
     </section>
     <router-view></router-view>
   </div>
